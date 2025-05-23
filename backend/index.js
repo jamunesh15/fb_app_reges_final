@@ -5,7 +5,7 @@ require("dotenv").config();
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:5173", // Your frontend URL
+  origin: "https://fb-app-reges-final-sure.onrender.com", // Your frontend URL
   credentials: true,
 }));
 
