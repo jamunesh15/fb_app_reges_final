@@ -19,7 +19,7 @@ const Addpeople = ({ refreshUserList }) => {
     e.preventDefault()
     setLoading(true)
     try {
-      await axios.post(`https://fb-app-reges-final-time.onrender.com`, formData, { withCredentials: true }) // ✅ FIXED
+      await axios.post(`https://fb-app-reges-final-time.onrender.com/createuser`, formData, { withCredentials: true }) // ✅ FIXED
       setFormData({ name: '', email: '', occupation: '', department: '', role: '' })
       if (refreshUserList) refreshUserList()
       navigate('/')
